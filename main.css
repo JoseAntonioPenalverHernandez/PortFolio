@@ -4,6 +4,7 @@
   scroll-padding-top: 80px;
 }
 
+/* LIGHT THEME */
 [data-bs-theme="light"] {
   --bs-body-bg: #f4f6f8;
   --bs-body-color: #4a4a4a;
@@ -11,32 +12,38 @@
   --bs-secondary-bg: #e9ecef;
   --bs-border-color: #e0e0e0;
 }
+
 [data-bs-theme="light"] .hover-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
   border-color: #0dcaf0 !important;
 }
+
 [data-bs-theme="light"] .form-control {
   background-color: #ffffff;
   border-color: #ced4da;
 }
+
 [data-bs-theme="light"] .form-control:focus {
   background-color: #fff;
   box-shadow: 0 0 0 0.25rem rgba(13, 202, 240, 0.15);
 }
 
+/* DARK THEME */
 [data-bs-theme="dark"] {
   --bs-body-bg: #121212;
   --bs-body-color: #e0e0e0;
   --bs-tertiary-bg: #1e1e1e;
   --bs-secondary-bg: #2d2d2d;
 }
+
 [data-bs-theme="dark"] .hover-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5) !important;
   border-color: #0dcaf0 !important;
 }
 
+/* COMMON STYLES */
 .hover-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   border: 1px solid transparent;
@@ -53,42 +60,42 @@
   margin-left: 3px;
 }
 
+/* Scroll margin for fixed navbar */
 .scroll-margin-top {
   scroll-margin-top: 100px;
+}
 
-  /* Animación de la flecha en Header */
-  @keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-10px);
-    }
-    60% {
-      transform: translateY(-5px);
-    }
+/* Animación de la flecha en Header */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
-  .animate-bounce {
-    animation: bounce 2s infinite;
+  40% {
+    transform: translateY(-10px);
   }
+  60% {
+    transform: translateY(-5px);
+  }
+}
 
-  /* Efecto Zoom en imagenes del portafolio */
-  .card-img-wrapper {
-    overflow: hidden; /* Importante para que la imagen no se salga */
-  }
-  .transition-zoom {
-    transition: transform 0.5s ease;
-  }
-  .hover-card:hover .transition-zoom {
-    transform: scale(1.1); /* Zoom suave al pasar ratón */
-  }
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
 
-  /* Espaciado del navbar fijo */
-  .scroll-margin-top {
-    scroll-margin-top: 80px;
-  }
+/* Efecto Zoom en imágenes del portafolio */
+.card-img-wrapper {
+  overflow: hidden; /* Importante para que la imagen no se salga */
+}
+
+.transition-zoom {
+  transition: transform 0.5s ease;
+}
+
+.hover-card:hover .transition-zoom {
+  transform: scale(1.1); /* Zoom suave al pasar ratón */
+}
+
+/* Ajuste final scroll-margin-top para navbar */
+.scroll-margin-top {
+  scroll-margin-top: 80px;
 }
