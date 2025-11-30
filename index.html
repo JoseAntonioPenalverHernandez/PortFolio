@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | PeñalverDev</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary border-bottom shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                <i class="bi bi-code-square fs-3 me-2 text-info"></i>
+                Peñalver<span class="text-info">Dev</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_plegable">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar_plegable">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button class="btn btn-outline-secondary btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;" id="themeToggle">
+                            <i class="bi bi-moon-fill" id="themeIcon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        
+        <header id="inicio" class="min-vh-100 d-flex align-items-center bg-body-tertiary border-bottom pt-5">
+            <div class="container">
+                <div class="row align-items-center flex-column-reverse flex-md-row">
+                    <div class="col-md-7 text-center text-md-start mt-4 mt-md-0">
+                        <span class="badge bg-info bg-opacity-10 text-info border border-info mb-3 px-3 py-2 rounded-pill">
+                            <i class="bi bi-terminal me-1"></i> Full Stack Developer
+                        </span>
+                        <h1 class="display-3 fw-bold text-body-emphasis mb-3">Jose Antonio <br>Peñalver</h1>
+                        <p class="fs-4 text-body-secondary mb-4">Estudiante de 2º DAW creando experiencias digitales limpias y funcionales.</p>
+                        
+                        <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                            <a href="#contacto" class="btn btn-info text-white px-5 py-3 fw-bold shadow-sm rounded-pill hover-scale">
+                                Contactar
+                            </a>
+                            <a href="#portfolio" class="btn btn-outline-secondary px-5 py-3 rounded-pill hover-scale">
+                                Ver Trabajos
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <div class="position-relative d-inline-block">
+                            <div class="position-absolute top-50 start-50 translate-middle bg-info opacity-25 rounded-circle blur-bg" style="width: 300px; height: 300px; filter: blur(60px); z-index: 0;"></div>
+                            <img src="avatar.png" onerror="this.src='https://placehold.co/300x300/png?text=Avatar'" class="rounded-circle img-fluid profile-img position-relative" style="width: 408px; height: 612px; z-index: 1;" alt="Foto Perfil">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 d-none d-md-block animate-bounce">
+                    <a href="#portfolio" class="text-secondary fs-1"><i class="bi bi-chevron-down"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <section id="portfolio" class="py-5 scroll-margin-top">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold text-body-emphasis">Portafolio</h2>
+                    <p class="text-muted lead">Selección de proyectos destacados</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 border-0 shadow-sm hover-card bg-body-tertiary">
+                            <div class="card-img-wrapper overflow-hidden">
+                                <img src="Captura.PNG" class="card-img-top transition-zoom" alt="Juego">
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <header>
+                                    <h3 class="card-title h5 fw-bold mb-3">Juego 7:30</h3>
+                                </header>
+                                <p class="card-text text-secondary flex-grow-1">Implementación completa de la lógica del juego utilizando JavaScript Vanilla y manipulación avanzada del DOM.</p>
+                                <footer class="mt-3 pt-3 border-top">
+                                    <span class="badge bg-warning text-dark border">JavaScript</span>
+                                    <span class="badge bg-light text-dark border ms-1">Game Logic</span>
+                                </footer>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 border-0 shadow-sm hover-card bg-body-tertiary">
+                             <div class="card-img-wrapper overflow-hidden">
+                                <img src="Captura2.PNG" class="card-img-top transition-zoom" alt="Conversor">
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <header>
+                                    <h3 class="card-title h5 fw-bold mb-3">Conversor Universal</h3>
+                                </header>
+                                <p class="card-text text-secondary flex-grow-1">Aplicación web progresiva para cálculo y conversión de unidades métricas y monetarias en tiempo real.</p>
+                                <footer class="mt-3 pt-3 border-top">
+                                    <span class="badge bg-primary text-white border">HTML/CSS</span>
+                                    <span class="badge bg-light text-dark border ms-1">PWA</span>
+                                </footer>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 border-0 shadow-sm hover-card bg-body-tertiary">
+                             <div class="card-img-wrapper overflow-hidden">
+                                <img src="Captura3.PNG" class="card-img-top transition-zoom" alt="Agenda">
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <header>
+                                    <h3 class="card-title h5 fw-bold mb-3">Agenda Java</h3>
+                                </header>
+                                <p class="card-text text-secondary flex-grow-1">Sistema de gestión de contactos de escritorio utilizando Swing y principios SOLID.</p>
+                                <footer class="mt-3 pt-3 border-top">
+                                    <span class="badge bg-info bg-opacity-10 text-info border border-info">Java</span>
+                                    <span class="badge bg-light text-dark border ms-1">POO</span>
+                                </footer>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="py-5 bg-body-tertiary border-top border-bottom scroll-margin-top">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="https://media.istockphoto.com/id/183805843/photo/generic-java-code.jpg?s=612x612&w=0&k=20&c=JAgo0udtRzOScDWRDvgHYwfk8m2pDu1R3VIgzHzeMOc=" class="img-fluid rounded-4 shadow" alt="Workspace">
+                    </div>
+                    <div class="col-lg-6 ps-lg-5">
+                        <span class="text-info fw-bold text-uppercase small ls-1">Mi Perfil</span>
+                        <h2 class="display-6 fw-bold text-body-emphasis mb-4">Más que código</h2>
+                        <p class="lead text-body-secondary">Desarrollador web en formación con un fuerte background en hardware y sistemas.</p>
+                        <p class="text-secondary mb-4">
+                            Mi objetivo es fusionar el rendimiento técnico con un diseño limpio. Actualmente estoy profundizando en frameworks modernos como Spring Boot y React, sin descuidar las bases del desarrollo backend con PHP y Java.
+                        </p>
+                        
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                    <span>Codigo Limpio</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                    <span>Diseño Responsive </span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                    <span>Diseño de Bases de Datos</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                    <span>Trabajo con Git</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="min-vh-100 d-flex align-items-center py-5 scroll-margin-top">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mb-5">
+                            <h2 class="display-5 fw-bold text-body-emphasis">Hablemos</h2>
+                            <p class="text-muted">¿Tienes una propuesta o quieres colaborar?</p>
+                        </div>
+                        
+                        <div class="card shadow-lg border-0 bg-body-tertiary rounded-4 overflow-hidden">
+                            <div class="row g-0">
+                                <div class="col-md-5 bg-info text-white p-4 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <i class="bi bi-envelope-paper fs-1 mb-3"></i>
+                                    <h4>¡Escríbeme!</h4>
+                                    <p class="small">Suelo responder en menos de 24 horas.</p>
+                                </div>
+                                <div class="col-md-7 p-4 p-md-5">
+                                    <form class="needs-validation" novalidate>
+                                        <div class="mb-3">
+                                            <label for="nombre" class="form-label small text-uppercase fw-bold text-secondary">Nombre</label>
+                                            <input type="text" class="form-control bg-body-tertiary" id="nombre" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label small text-uppercase fw-bold text-secondary">Email</label>
+                                            <input type="email" class="form-control bg-body-tertiary" id="email" required>
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="mensaje" class="form-label small text-uppercase fw-bold text-secondary">Mensaje</label>
+                                            <textarea class="form-control bg-body-tertiary" id="mensaje" rows="4" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-dark w-100 py-2 fw-bold">Enviar Mensaje</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0 opacity-75 small">© 2025 Jose Antonio Peñalver. Desarrollo Web.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        /* Tu script de validación y tema oscuro va aquí igual que antes */
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const htmlElement = document.documentElement;
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-bs-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            htmlElement.setAttribute('data-bs-theme', newTheme);
+            themeIcon.className = newTheme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+        });
+
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+</html>
