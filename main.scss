@@ -10,7 +10,6 @@ $borde-suave: #e0e0e0;
 }
 
 /* --- 3. MIXIN (Requisito SCSS) --- */
-// CORRECCIÓN: Ahora acepta un color base y un nivel numérico
 @mixin efecto-card($color-base, $nivel-opacidad) {
     transform: translateY(-5px);
     // Usamos rgba pasando el color y llamando a la función para la opacidad
